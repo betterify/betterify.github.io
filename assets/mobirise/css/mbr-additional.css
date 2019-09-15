@@ -2129,7 +2129,7 @@ body {
   color: #ffffff;
 }
 .cid-rC86FaE7X7 {
-  background-image: url("../../../assets/images/background3.jpg");
+  background-image: url("../../../assets/images/mbr-1-1920x1280.jpg");
 }
 .cid-rC86FaE7X7 h1 {
   color: #616161;
@@ -2141,6 +2141,16 @@ body {
 }
 .cid-rC86FaE7X7 .mbr-section-subtitle {
   font-style: italic;
+}
+.cid-rC86FaE7X7 H1 {
+  color: #232323;
+}
+.cid-rC86FaE7X7 H3 {
+  color: #232323;
+}
+.cid-rC86FaE7X7 .mbr-text,
+.cid-rC86FaE7X7 .mbr-section-btn {
+  color: #232323;
 }
 .cid-qTkAaeaxX5 {
   padding-top: 60px;
