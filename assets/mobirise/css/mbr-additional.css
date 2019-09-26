@@ -2152,6 +2152,30 @@ body {
 .cid-rC86FaE7X7 .mbr-section-btn {
   color: #232323;
 }
+.cid-rDboID01JL {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-image: url("../../../assets/images/background4.jpg");
+}
+.cid-rDboID01JL .title {
+  margin-bottom: 2rem;
+}
+.cid-rDboID01JL .mbr-section-subtitle {
+  color: #232323;
+}
+.cid-rDboID01JL a:not([href]):not([tabindex]) {
+  color: #fff;
+  border-radius: 3px;
+}
+.cid-rDboID01JL a.btn-white:not([href]):not([tabindex]) {
+  color: #333;
+}
+.cid-rDboID01JL textarea.form-control {
+  min-height: 188px;
+}
+.cid-rDboID01JL H2 {
+  color: #232323;
+}
 .cid-qTkAaeaxX5 {
   padding-top: 60px;
   padding-bottom: 60px;
