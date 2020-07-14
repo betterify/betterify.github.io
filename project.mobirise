@@ -1033,15 +1033,15 @@
         {
           "loadsvg": "@PROJECT_PATH@/assets/images/loading.svg",
           "_params": {
-            "paddingTop": "1",
-            "paddingBottom": "1",
+            "paddingTop": "0",
+            "paddingBottom": "0",
             "postToLoad": "8",
             "facebookToken": "",
             "facebook": "",
             "twitter": "",
             "youtube": "UCpwzkTmVwEa8SLwrZthjbLg",
             "bgColorRadio": true,
-            "bgColor": "#f9f295",
+            "bgColor": "#ff7f9f",
             "bgImageRadio": false,
             "bgImage": "@ADDONS_PATH@/social-feed/feed/assets/comments_bg.jpg",
             "overlay": true,
