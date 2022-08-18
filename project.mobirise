@@ -1162,6 +1162,113 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "input, textarea, button, select, a": {
+              "-webkit-tap-highlight-color": "rgba(0, 0, 0, 0)"
+            },
+            ".wrap": {
+              "position": "fixed",
+              "display": "flex",
+              "flex-wrap": "wrap",
+              "justify-content": "center",
+              "align-items": "center",
+              "width": "100%",
+              "bottom": "50",
+              "right": "0",
+              "padding-right": "20px",
+              "background-color": "@barColorSelect",
+              "z-index": "2",
+              "visibility": "visible"
+            },
+            ".copyright": {
+              "position": "fixed",
+              "z-index": "1",
+              "visibility": "visible",
+              "margin-left": "10px",
+              "left": "0",
+              "padding-left": "20px"
+            },
+            "@media (min-width: 768px)": {
+              ".wrap": {
+                "justify-content": "flex-end"
+              }
+            },
+            "@media (max-width: 768px)": {
+              ".wrap": {
+                "justify-content": "space-around",
+                "padding-right": "0px"
+              },
+              ".copyright": {
+                "visibility": "hidden"
+              }
+            },
+            ".item": {
+              "border-radius": "50%",
+              "font-size": "30px",
+              "font-height": "100%",
+              "text-align": "center",
+              "vertical-align": "middle",
+              "padding": "10px",
+              "margin-top": "10px",
+              "margin-left": "5px",
+              "margin-right": "5px",
+              "margin-bottom": "10px"
+            },
+            ".hidden": {
+              "display": "none"
+            },
+            "& when (@preview)": {
+              ".wrap": {
+                "visibility": "hidden",
+                "z-index": "0",
+                "display": "block !important"
+              },
+              ".copyright": {
+                "visibility": "hidden"
+              }
+            },
+            ".show": {
+              "visibility": "visible !important",
+              "bottom": "0"
+            },
+            "& when not (@barColor)": {
+              ".wrap": {
+                "background-color": "transparent !important"
+              },
+              ".mbr-section-subtitle": {
+                "visibility": "hidden"
+              }
+            },
+            "& when not (@copyright)": {
+              ".mbr-section-subtitle": {
+                "visibility": "hidden"
+              }
+            },
+            "& when (@transparent)": {
+              "@media (max-width: 768px)": {
+                ".wrap": {
+                  "background-color": "transparent !important"
+                }
+              }
+            },
+            ".mbr-section-subtitle": {
+              "color": "#ffffff"
+            }
+          },
+          "_name": "design-block",
+          "_customHTML": "<section group=\"Footers\">\n\n<mbr-parameters>\n<input type=\"checkbox\" title=\"Hide in editor\" name=\"preview\">\n<input type=\"range\" inline title=\"Buttons\" name=\"items\" min=\"1\" max=\"5\" value=\"5\" step=\"1\">\n<input type=\"color\" title=\"Bg Button 1\" name=\"bgColor5\" value=\"#25d366\" condition=\"items > 0\">\n<input type=\"color\" title=\"Bg Button 2\" name=\"bgColor4\" value=\"#0084ff\" condition=\"items > 1\">\n<input type=\"color\" title=\"Bg Button 3\" name=\"bgColor3\" value=\"#3b5999\" condition=\"items > 2\">\n<input type=\"color\" title=\"Bg Button 4\" name=\"bgColor2\" value=\"#d93175\" condition=\"items > 3\">\n<input type=\"color\" title=\"Bg Button 5\" name=\"bgColor1\" value=\"#55acee\" condition=\"items > 4\">\n<input type=\"checkbox\" title=\"Bar Color\" name=\"barColor\" checked>\n<input type=\"color\" title=\"Select\" name=\"barColorSelect\" value=\"#1e2228\" condition=\"barColor == true\">\n<input type=\"checkbox\" title=\"Transparent in mobile\" name=\"transparent\" condition=\"barColor == true\">\n<input type=\"checkbox\" title=\"Show Copyright\" name=\"copyright\" condition=\"barColor == true\" checked>\n</mbr-parameters>\n\n<div mbr-class=\"{'hidden': isPublish}\" style=\"padding:4rem; color: #ffffff; background-color:#000000;\">Footer Bar 🡇 You can hide in editor ⚙ to avoid overlap</div>\n\n<div mbr-class=\"{'show': isPublish}\" class=\"wrap\">\n\n<h3 data-app-selector=\".mbr-section-subtitle\" class=\"mbr-section-subtitle align-center mbr-light mbr-fonts-style copyright\" mbr-theme-style=\"display-7\">Designed with ❤ by <a href=\"https://www.avadhoot.me/\" target=\"_blank\">Avadhoot Dandekar</a> ©2022 </h3>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-twitter socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor1}}\" href=\"https://twitter.com/AvadhootMe\" mbr-if=\"items > 4\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-instagram socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor2}}\" href=\"https://www.instagram.com/avadhoot.dandekar/\" mbr-if=\"items > 3\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-facebook socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor3}}\" href=\"https://www.facebook.com/avadhoot.me/\" mbr-if=\"items > 2\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-messenger socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor4}}\" href=\"#\" mbr-if=\"items > 1\"></a>\n\n<a mbr-icon class=\"item mbr-iconfont socicon-whatsapp socicon\" target=\"_blank\" style=\"color: rgb(255, 255, 255); fill: rgb(255, 255, 255); background-color:{{bgColor5}}\" href=\"#\" mbr-if=\"items > 0\"></a>\n\n</div>\n\n</section>",
+          "_cid": "5xgvC6aovx",
+          "_anchor": "design-block-5xgvC6aovx",
+          "_sourceTheme": "mobirise4",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": [],
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
         }
       ]
     },
